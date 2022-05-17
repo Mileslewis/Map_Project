@@ -1,0 +1,64 @@
+Elevation Map:
+
+Attenuation = 0
+Earth Elevations pasted in as array.
+elevationMap.data set to Earth Elevations, then normalised
+All map sizes change to 105,60
+elevationMap, temp and rainfall maps saved
+added extra print statements to save()
+elevationblend decrease
+assignstartingplots functions + option deleted
+bug in Plot_GetPlotsInCircleFast for even heights?
+deleted twistedmap, mountainmap
+removed use of ocean + island creation
+normalization increased to max and min of 30000/-30000
+rainfall blend increased to 2
+
+
+Temp + Elevation Map:
+
+summer, winter,Temp and elev data for 105x60 map
+changed the terrain type function
+removed ocean/island creation functions and connect terrain
+
+el. + temp +rain Map:
+
+Removed summer,winter, geo maps
+earth rain data added
+removed normalization of temp, rain, elevation and diffmap
+temps,rainfall, sealevel, hill/mountains now absolute thresholds
+blending now only does snow to grass (not working properly)
+averageInHex excludeZeroes variable
+diffmap now doesn't have elevationmap added
+ice placement all below - 40 and above/below lattitudes(turned off atm)
+jungle randomness removed
+
+Temp Changed:
+
+		elevation		sin_lat			cos_lat		const
+
+Summer below:	[0.01398213661678434]
+[0.0830518354899288]
+[0.49962993388399773]
+[0.38913755382681475]
+
+Summer Above:	[-0.3580432943879109]
+[0.14843962755038442]
+[0.6453991482190107]
+[0.4617138108549007]
+
+Winter Below:	[0.002866850274373602]
+[-0.03160188871204474]
+[0.7790995790289933]
+[0.1462310881584324]
+
+Winter Above: 	[-0.2895686739914222]
+[-0.08006616748374826]
+[0.8884449246537949]
+[0.1800631241446756]
+
+Below = 	[0.008}			[0.057]			0.69			0.26
+Above = 	-0.319			0.114			0.76			0.32
+
+Temp formula changed
+
